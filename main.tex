@@ -1,0 +1,51 @@
+\documentclass[
+    12pt,
+    a4paper,
+    % twocolumn
+    ]{article}
+
+% -----SETTINGS-----
+
+%basic settings
+\usepackage[english]{babel} % Set language
+\usepackage[T1]{fontenc} % set output font
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath} %for writing math
+\usepackage[
+    a4paper, 
+    top=25.4mm, 
+    bottom=25.4mm, 
+    left=12.7mm, 
+    right=12.7mm,
+    marginparwidth=1.75cm,
+    %showframe
+    ]{geometry} %margins specified in guidelines
+\usepackage[colorlinks=true, allcolors=blue]{hyperref} % specify blue hyperlinks
+
+%Citation settings 
+\usepackage[
+    style = ieee,
+    natbib=true
+    ]{biblatex} % citep citet citep* citet*
+\addbibresource{references.bib}
+\usepackage{csquotes} % recommended for biblatex with babel/polyglossia
+
+% other settings
+\usepackage{float} % for Here function in figures
+\usepackage{multirow} % better tables
+\usepackage{xcolor}
+\pagecolor{white}
+\color{black}
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0em}
+
+% -----FRONTMATTER-----
+\title{ME4231}
+\author{Guo Anxiang}
+\date{}
+
+% -----BEGIN-----
+\begin{document}
+\maketitle
+\input{CHAPTERS/Week 1.tex}
+\end{document}

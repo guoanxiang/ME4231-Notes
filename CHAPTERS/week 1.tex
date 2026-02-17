@@ -1,0 +1,233 @@
+\section{Week 1}
+\subsection{Deriving NS equations}
+
+\begin{equation} %\label{NS equations in compact form}
+    \frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla)\mathbf{u} = -\frac{1}{\rho} \nabla p + \nu \nabla ^{2} \mathbf{u} + \mathbf{f}
+\end{equation}
+
+
+On the left-hand side, there consists of the time derivative term. 
+
+\begin{equation}
+    \frac{\partial \mathbf{u}}{\partial t} =\begin{pmatrix}\frac{\partial u}{\partial t} \\[6pt] \frac{\partial v}{\partial t} \\[6pt] \frac{\partial w}{\partial t}\end{pmatrix}
+\end{equation}
+
+There also consists of the convective term. 
+
+\begin{equation}
+    (\mathbf{u} \cdot \nabla)\mathbf{u} = \left( \begin{pmatrix}u \\v \\ w\end{pmatrix}\cdot\begin{pmatrix}\frac{\partial}{\partial x} \\[6pt] \frac{\partial}{\partial y} \\[6pt] \frac{\partial}{\partial z}\end{pmatrix}\right)\begin{pmatrix}u \\v \\ w\end{pmatrix}=\left( u \frac{\partial}{\partial x} + v \frac{\partial}{\partial y} + w \frac{\partial}{\partial z} \right)\begin{pmatrix}u \\v \\ w\end{pmatrix} =\begin{pmatrix}\left( u \frac{\partial}{\partial x} + v \frac{\partial}{\partial y} + w \frac{\partial}{\partial z} \right)u \\[6pt] \left( u \frac{\partial}{\partial x} + v \frac{\partial}{\partial y} + w \frac{\partial}{\partial z} \right)v \\[6pt] \left( u \frac{\partial}{\partial x} + v \frac{\partial}{\partial y} + w \frac{\partial}{\partial z} \right)w\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+    (\mathbf{u} \cdot \nabla)\mathbf{u} = \begin{pmatrix} u \frac{\partial u}{\partial x} + v \frac{\partial u}{\partial y} + w \frac{\partial u}{\partial z} \\[6pt]  u \frac{\partial v}{\partial x} + v \frac{\partial v}{\partial y} + w \frac{\partial v}{\partial z}  \\[6pt]  u \frac{\partial w}{\partial x} + v \frac{\partial w}{\partial y} + w \frac{\partial w}{\partial z} \end{pmatrix}
+\end{equation}
+
+On the right-hand side, there consists of the pressure gradient term.  
+
+\begin{equation}
+-\frac{1}{\rho} \nabla p=-\frac{1}{\rho}\begin{pmatrix}
+    \frac{\partial p}{\partial x} \\[6pt]
+    \frac{\partial p}{\partial y} \\[6pt]
+    \frac{\partial p}{\partial z}
+\end{pmatrix}=
+\begin{pmatrix}
+    -\frac{1}{\rho}\frac{\partial p}{\partial x} \\[6pt]
+    -\frac{1}{\rho}\frac{\partial p}{\partial y} \\[6pt]
+    -\frac{1}{\rho}\frac{\partial p}{\partial z}
+\end{pmatrix}
+\end{equation}
+
+Also, the viscous friction term on RHS. 
+
+\begin{equation}
+\nu \nabla ^{2} \mathbf{u} 
+= \nu\left(\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}\right)\begin{pmatrix}
+    u \\
+    v \\
+    w
+\end{pmatrix}
+=\nu\begin{pmatrix}
+    \frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}+\frac{\partial^{2}u}{\partial z^{2}} \\[6pt]
+    \frac{\partial^{2}v}{\partial x^{2}}+\frac{\partial^{2}v}{\partial y^{2}}+\frac{\partial^{2}v}{\partial z^{2}} \\[6pt]
+    \frac{\partial^{2}w}{\partial x^{2}}+\frac{\partial^{2}w}{\partial y^{2}}+\frac{\partial^{2}w}{\partial z^{2}}
+\end{pmatrix}
+\end{equation}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{references/screenshot001}
+    \caption{The full form of Naiver Stokes Momentum Equation}
+    \label{fig:full form NS equations}
+\end{figure}
+
+
+This gives the equations listed in figure \ref{fig:full form NS equations}. Conversion of matrices above to PDE is not listed. 
+
+\subsubsection{Linear Momentum Equations}
+\begin{equation}
+    \sum \mathbf{F} = \sum (\dot{m}\cdot \mathbf{v})_{\mathrm{out}} - \sum (\dot{m}\cdot \mathbf{v})_{\mathrm{in}}
+\end{equation}
+
+Assumptions: steady flow. 
+
+Net force acting on a system = \textbf{rate of change} of linear momentum. 
+
+Can separate into 2 components, x and y, if needed. 
+
+\begin{equation}
+    \dot{m} = \rho A v = m v
+\end{equation}
+
+Using equation above, and adding $m$ we obtain 
+
+Relating linear momentum $p = mv$ to the NS equations is shown below. Multiply density to all terms 
+
+For first term in NS equations, 
+
+\begin{equation}
+    \rho \frac{\partial u}{\partial t} = \frac{m}{V} \frac{\partial u}{\partial t}
+\end{equation}
+
+We obtain forces on a volume. 
+
+For second term, 
+
+\begin{equation}
+    \rho u \cdot \frac{\partial u}{\partial x} = 
+\end{equation}
+
+\begin{center}
+    \colorbox{pink}{continue with derivation of NS equations, slide 27}\\
+    \colorbox{pink}{continue with non-dimensionalized equations}
+\end{center}
+
+\subsection{Mathematics}
+Prerequisite: Gradient operator $\nabla$, $\nabla k$, where $k$ is a constant, divergence $\nabla \cdot \mathbf{V}$, Laplacian $\nabla^{2} = \Delta = \nabla \cdot \nabla$ (Note this is a scalar, treat this like a mathematical operator, similar to $\frac{\partial^{2}}{\partial x^{2}}$), curl $\nabla \times \mathbf{V}$. 
+
+\subsubsection{Vorticity}
+Vorticity is a vector, $\boldsymbol{\zeta}$. (In notes expressed as $\boldsymbol{\omega}$ but do not wish to confuse with angular velocity). 
+
+\begin{equation}
+    \boldsymbol{\zeta} = \nabla \times \mathbf{v} = 
+    \begin{pmatrix}
+        \frac{\partial}{\partial x}\\[6pt]
+        \frac{\partial}{\partial y}\\[6pt]
+        \frac{\partial}{\partial z}\\
+    \end{pmatrix}
+    \times
+    \begin{pmatrix}
+        u\\
+        v\\
+        w\\
+    \end{pmatrix}
+\end{equation}
+
+Where $\mathbf{v}$ is a velocity vector. 
+
+\textbf{Recap on Angular Kinematics}
+
+\begin{equation}
+    s = r \theta
+\end{equation}
+\begin{equation}
+    v = r \omega
+\end{equation}
+\begin{equation}
+    a = r \alpha
+\end{equation}
+
+
+\textbf{Relate Angular Velocity to Vorticity}
+
+Below is a prerequisite on triple product rule of vectors. 
+\begin{equation}
+    \mathbf{a} \times \left(\mathbf{b} \times \mathbf{c}\right) = -\mathbf{c}\times\left(\mathbf{a}\times\mathbf{b}\right) = 
+\left(\mathbf{c}\cdot\mathbf{a}\right) \mathbf{b} - \left(\mathbf{c}\cdot\mathbf{b}\right) \mathbf{a}
+\end{equation}
+
+Utilizing the above rule, 
+\begin{equation}
+    \mathbf{v} = \boldsymbol{\omega} \times \mathbf{r}
+\end{equation}
+
+\begin{align}
+    \nabla \times (\boldsymbol{\omega} \times \mathbf{r})
+    &= (\nabla \cdot \mathbf{r})\boldsymbol{\omega}-(\nabla \cdot \boldsymbol{\omega}) \mathbf{r} \\
+    &=\boldsymbol{\omega}\left(\frac{\partial x}{\partial x} + 
+    \frac{\partial y}{\partial y} + \frac{\partial z}{\partial z}\right) - \left(\omega_{x}\frac{\partial}{\partial x} + \omega_{y}\frac{\partial}{\partial y} + 
+    \omega_{z}\frac{\partial}{\partial z}\right)
+    \begin{pmatrix}
+        x \\
+        y \\
+        z 
+    \end{pmatrix}
+\end{align} 
+
+Due to $x$, $y$, and $z$ being independent of each other, $\frac{\partial x}{\partial y} \, , \, \frac{\partial x}{\partial z} \, , \, \frac{\partial y}{\partial x} \, , \, \frac{\partial y}{\partial z} \, , \, \frac{\partial z}{\partial x} \; \mathrm{and} \; \frac{\partial z}{\partial y} = 0$ 
+\begin{align}
+    \nabla \times (\boldsymbol{\omega} \times \mathbf{r}) 
+    &=3\boldsymbol{\omega} - \boldsymbol{\omega} \\
+    \boldsymbol{\zeta}=\nabla\times\mathbf{v}&=2\boldsymbol{\omega}
+\end{align}
+
+If flow is irrotational, i.e. no vorticity, 
+\begin{equation}
+    \boldsymbol{\zeta}=\boldsymbol{\omega} = \mathbf{0}
+\end{equation}
+
+\subsubsection{Potential Flow}
+\begin{align}
+    \nabla \times \nabla k &= 
+    \begin{pmatrix}
+        \frac{\partial}{\partial x}\\[6pt]
+        \frac{\partial}{\partial y}\\[6pt]
+        \frac{\partial}{\partial z}
+    \end{pmatrix}
+    \times
+    \begin{pmatrix}
+        \frac{\partial k}{\partial x}\\[6pt]
+        \frac{\partial k}{\partial y}\\[6pt]
+        \frac{\partial k}{\partial z}
+    \end{pmatrix}
+\end{align}
+where k is a scalar. After cross product is attempted, it is clear that each entry in vector gives 0. 
+\begin{align}
+    \nabla \times \nabla k = \mathbf{0}
+\end{align}
+It is easy to see that if $\nabla \times \mathbf{v} = \textbf{0}$, then $\mathbf{v} = \nabla k$, gradient of a scalar. 
+
+\subsubsection{Kinematic Viscosity and Dynamic Viscosity}
+Kinematic viscosity $\nu$ and dynamic viscosity $\mu$ is related by the formula below. 
+\begin{equation}
+    \nu = \frac{\mu}{\rho}
+\end{equation}
+Since density changes with temperature, both $\nu$ and $\mu$ is temperature dependent. 
+
+\subsubsection{Shear Stress in a Fluid}
+Shear stress $\tau_{xy}$ is given by the equation below. 
+\begin{equation}
+    \tau_{xy} = \mu \cdot \left(\frac{\partial u}{\partial y}\right)
+\end{equation}
+
+Fluid flows in the $x$ direction, from left to right. Fluid gains in elevation in $y$ direction, moves away from boundary plate. 
+
+If flow is inviscid, $\mu = 0$, then shear stress $\tau = 0$. 
+
+More on this concept in ME2134. 
+
+\subsubsection{Skin Friction Drag}
+Skin friction drag $D$ is given by the equation below. 
+\begin{equation}
+    D =\int\tau \cdot dA
+\end{equation}
+
+\subsubsection{Formulas}
+\begin{center}
+    \begin{tabular}{|c | c | c | c|}
+        \hline
+        Reynolds Number & Mach Number & Speed of Sound & Knudsen Number \\
+        \hline
+        $Re = \frac{\rho \cdot u \cdot L}{\mu} = \frac{u \cdot L}{\nu}$ & $M = \frac{V}{a}$ & $a=\sqrt{\gamma R T}$ & $Kn = \frac{\textrm{Mean \, Free \, Path}}{\textrm{Characteristic \, Length \, Scale}} = \frac{\lambda}{d}$\\
+        \hline
+    \end{tabular}
+\end{center}
