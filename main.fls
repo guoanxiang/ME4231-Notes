@@ -1,6 +1,6 @@
-PWD c:\Users\anxia\Desktop\ME4231
+PWD c:\Users\anxia\Documents\ME4231
 INPUT C:\Users\anxia\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\anxia\Desktop\ME4231\main.tex
+INPUT c:\Users\anxia\Documents\ME4231\main.tex
 OUTPUT main.log
 INPUT C:\Users\anxia\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\anxia\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -251,6 +251,9 @@ INPUT C:\Users\anxia\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm080
 INPUT C:\Users\anxia\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx0800.tfm
 INPUT C:\Users\anxia\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0600.tfm
 INPUT C:\Users\anxia\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx0600.tfm
+INPUT .\CHAPTERS\week 2.tex
+INPUT .\CHAPTERS\week 2.tex
+INPUT CHAPTERS\week 2.tex
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out

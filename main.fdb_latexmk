@@ -1,12 +1,11 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1771122814.84302 -1
-  "main.bcf" 1771122814 107397 eac68fe4208c075a452fcd075ab1fc2b "pdflatex"
-  "references.bib" 1770733376 0 d41d8cd98f00b204e9800998ecf8427e ""
+["biber main"] 1771343361.93464 "main.bcf" "main.bbl" "main" 1771343442.36051 0
+  "main.bcf" 1771343441 107397 eac68fe4208c075a452fcd075ab1fc2b "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1771122813.19834 "c:/Users/anxia/Desktop/ME4231/main.tex" "main.pdf" "main" 1771122814.84407 0
+["pdflatex"] 1771343439.92278 "c:/Users/anxia/Documents/ME4231/main.tex" "main.pdf" "main" 1771343442.36198 0
   "C:/Users/anxia/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1770826203 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/anxia/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1770732556 31952 224c96fd5ece27afe9edfa92b7decc91 ""
   "C:/Users/anxia/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1770735111 40136 9b2cccbbee1c0b487ef750b876c4e7bd ""
@@ -137,14 +136,15 @@
   "C:/Users/anxia/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "C:/Users/anxia/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/anxia/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "CHAPTERS/Week 1.tex" 1771120555 9474 5657aaefc8326c64bd791cc935f1745e ""
-  "c:/Users/anxia/Desktop/ME4231/main.tex" 1771122812 1200 6ec3e40e5d63e0753a31dba0c20ba23c ""
-  "main.aux" 1771122814 1970 3f1141a1c17510d36ac667009b6d015e "pdflatex"
-  "main.bbl" 1771081155 486 76d65a242ec496c9b4361af646ff12cb "biber main"
-  "main.out" 1771122814 1555 105e5eb17be1a940aee57595f61957f1 "pdflatex"
-  "main.run.xml" 1771122814 2436 5d0b9cfee126e4866a5e272fd747dac2 "pdflatex"
-  "main.tex" 1771122812 1200 6ec3e40e5d63e0753a31dba0c20ba23c ""
-  "references/screenshot001.png" 1770823041 55618 5c3c6b4bb56114740f82e36c7eafb6ec ""
+  "CHAPTERS/Week 1.tex" 1771341974 9382 012ab9587185c0226fc1044a2d6f6125 ""
+  "CHAPTERS/week 2.tex" 1771343220 16 87b621b5ae14191e8ad119ef0e7f0295 ""
+  "c:/Users/anxia/Documents/ME4231/main.tex" 1771343436 1281 26329f44a16a9d3440fe37e1dee0302d ""
+  "main.aux" 1771343441 2073 8273d65f057a3457dc9ad047e10a57ab "pdflatex"
+  "main.bbl" 1771343365 486 76d65a242ec496c9b4361af646ff12cb "biber main"
+  "main.out" 1771343441 1632 e683a456c1cf00095372b9aa2ca96ef6 "pdflatex"
+  "main.run.xml" 1771343441 2436 5d0b9cfee126e4866a5e272fd747dac2 "pdflatex"
+  "main.tex" 1771343436 1281 26329f44a16a9d3440fe37e1dee0302d ""
+  "references/screenshot001.png" 1771341974 55618 5c3c6b4bb56114740f82e36c7eafb6ec ""
   (generated)
   "main.aux"
   "main.bcf"
